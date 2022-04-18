@@ -5,6 +5,7 @@
 }
 .form-element label {
     width: 30%;
+    margin: 2px;
 }
 .form-element input{
     width: 70%;
