@@ -9,6 +9,9 @@
 .form-element input{
     width: 70%;
 }
+fieldset {
+    border: 0;
+}
 
 .btn {
     width: 100px;
