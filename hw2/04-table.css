@@ -1,6 +1,9 @@
 :root {
   --lightorange: rgba(255, 165, 0, 0.1);
 }
+table, tr, th, td{
+  border: 1px solid black;
+}
 
 .table-heading {
   /* use the custom properties green and white for the colors - these colors are defined in the styles.css file */
@@ -9,3 +12,15 @@
 .channel {
   /* use the custom properties orange and black for the colors - these colors are defined in the styles.css file */
 }
+thead th{
+  background-color: var(--green);
+}
+
+tbody th{
+  background-color: var(--orange);
+}
+
+tr:hover{
+  background-color: var(--lightorange);
+}
+

@@ -1,7 +1,28 @@
 body {
   margin: 0;
 }
+nav{
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
 
+li{
+  background-color: var(--green);
+  padding : 15px;
+  margin: 0px;
+  display: float;
+  float : left;
+}
+li:hover{
+  background-color: var(--orange);
+  color: var(--white);
+}
+a{
+  text-decoration: none;
+  color: var(--white);
+}
 .nav-list {
 }
 

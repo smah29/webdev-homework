@@ -1,14 +1,37 @@
 .form {
+    border: 1px solid black;
+    border-radius: 1.5%;
+    padding: 40px 15px;
 }
-
-.form-element {
+.form-element label {
+    width: 30%;
+}
+.form-element input{
+    width: 70%;
 }
 
 .btn {
+    width: 100px;
+    height: 25px;
+    border: 1px solid green;
+    border-radius: 5%;
 }
 
 .btn-primary {
+    background-color: var(--green);
+    color: var(--white);
+}
+.btn-primary:hover {
+    background-color: var(--orange);
+    color: var(--black);
 }
 
 .btn-secondary {
+    background-color: var(--white);
+    color: var(--green);
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
 }

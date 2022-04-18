@@ -7,33 +7,44 @@
     <meta name="description" content="HW 05 - Form" />
     <meta http-equiv="author" content="Shreyoshi Mahato" />
     <title>05 - Form</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw2/05-form.css" />
   </head>
   <body>
     <main>
-      <form action="https://www.example.com" method="post">
+      <form class="form" action="https://www.example.com" method="post">
         <h1>Registration Form</h1>
-        <label for="username">Username:</label>
-        <input type="text" name="username" id="username" />
-        <br /><br />
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" />
-        <br /><br />
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password" />
-        <br /><br />
+        <div class="form-element">
+          <label for="username">Username:</label>
+          <input type="text" name="username" id="username" />
+        </div>
+        <div class="form-element">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="form-element">
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" />
+        </div>
         <fieldset>
           <legend>Would you like to sign up for the newsletter?</legend>
-          <input type="radio" name="signup" id="yes" />
-          <label for="yes">Yes, sign me up</label>
-          <input type="radio" name="signup" id="no" />
-          <label for="no">No, thank you</label>
+          <div>
+            <input type="radio" name="signup" id="yes" />
+            <label for="yes">Yes, sign me up</label>
+          </div>
+          <div>
+            <input type="radio" name="signup" id="no" />
+            <label for="no">No, thank you</label>
+          </div>
         </fieldset>
-        <br />
-        <label for="date">Date:</label>
-        <input type="date" name="date" id="date" />
-        <br /><br />
-        <input type="submit" value="Submit" />
-        <input type="reset" value="Reset" />
+        <div class="form-element">
+          <label for="date">Date:</label>
+          <input type="date" name="date" id="date" />
+        </div>
+        <div>
+          <input type="submit" class="btn btn-primary" value="Submit" />
+          <input type="reset" class="btn btn-secondary" value="Reset" />
+        </div>
       </form>
     </main>
   </body>
