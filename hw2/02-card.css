@@ -2,6 +2,14 @@
   width: 300px;
 }
 
+#card{
+  border : 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px;
+  height: 870px;
+}
+
 h1{
   text-align: center;
 }
@@ -14,14 +22,11 @@ h1{
   height: 40px;
   background-color: var(--navy);
   color: var(--white);
+  border-radius: 5%;
 }
 
 .btn:hover{
   background-color: var(--orange);
 }
 
-#card{
-  border : 1px solid;
-  padding: 10px;
-  border-radius: 10px;
-}
+
