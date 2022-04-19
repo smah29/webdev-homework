@@ -14,10 +14,15 @@ table, tr, th, td{
 }
 thead th{
   background-color: var(--green);
+  color: var(--white);
 }
 
 tbody th{
   background-color: var(--orange);
+}
+
+th,td{
+  padding: 10px 20px;
 }
 
 tr:hover{
