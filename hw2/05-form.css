@@ -2,18 +2,33 @@
     border: 1px solid black;
     border-radius: 1.5%;
     padding: 40px 15px;
+    box-sizing: border-box; 
 }
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
 .form-element label {
-    width: 30%;
-    margin: 2px;
+    display: inline-block;
+    width: 100px;
 }
 .form-element input{
     width: 70%;
 }
 fieldset {
     border: 0;
+    margin: 0;
+    padding: 0px;
+}
+fieldset section{
+    padding: 10px;
 }
 
+.form-element{
+    margin: 20px auto;
+}
 .btn {
     width: 100px;
     height: 25px;
@@ -24,18 +39,18 @@ fieldset {
 .btn-primary {
     background-color: var(--green);
     color: var(--white);
+    width: 50%;
 }
 .btn-primary:hover {
     background-color: var(--orange);
     color: var(--black);
+    
 }
 
 .btn-secondary {
     background-color: var(--white);
     color: var(--green);
+    width: 48.5%;
 }
 
-h1{
-    text-transform: uppercase;
-    text-align: center;
-}
+
