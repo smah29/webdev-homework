@@ -4,7 +4,12 @@
 main{
  margin : auto; 
  text-align: center;
- align-items: center;
+}
+
+figcaption{
+  text-align: left;
+  margin-left: 29%;
+  width: 50%;
 }
 
 figcaption::first-line{
