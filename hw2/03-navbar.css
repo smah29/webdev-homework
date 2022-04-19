@@ -4,30 +4,26 @@ body {
 nav{
   box-sizing: border-box;
 }
-ul{
+
+.nav-list {
   list-style: none;
 }
 
-li{
+.list-item {
   background-color: var(--green);
   padding : 15px;
   margin: 0px;
   display: float;
   float : left;
 }
-li:hover{
+.list-item:hover{
   background-color: var(--orange);
-  color: var(--white);
 }
-a{
+
+.nav-link{
   text-decoration: none;
   color: var(--white);
 }
-.nav-list {
-}
-
-.list-item {
-}
-
-.nav-link {
+.nav-link:hover{
+  color: var(--black);
 }
