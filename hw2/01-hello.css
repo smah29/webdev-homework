@@ -13,7 +13,7 @@ figcaption{
 }
 
 figcaption::first-line{
-  text-transform: uppercase;
+  font-weight: bold;
 }
 
 img {

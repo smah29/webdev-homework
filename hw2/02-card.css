@@ -3,15 +3,16 @@
 }
 
 #card{
-  border : 1px solid;
+  border : 1px solid var(--navy);
   padding: 10px;
   border-radius: 10px;
   width: 300px;
-  height: 870px;
+  height: 900px;
 }
 
 h1{
   text-align: center;
+  color: var(--navy);
 }
 .image {
   width: 100%;
@@ -27,6 +28,8 @@ h1{
 
 .btn:hover{
   background-color: var(--orange);
+  color: var(--black);
+  border: 1px solid black;
 }
 
 

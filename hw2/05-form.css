@@ -3,16 +3,24 @@
     border-radius: 1.5%;
     padding: 40px 15px;
     box-sizing: border-box; 
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
 }
 
 h1{
     text-transform: uppercase;
     text-align: center;
 }
+.form-element{
+    margin: 20px auto;
+}
 
 .form-element label {
     display: inline-block;
     width: 100px;
+    font-weight: bold;
 }
 .form-element input{
     width: 70%;
@@ -25,10 +33,10 @@ fieldset {
 fieldset section{
     padding: 10px;
 }
-
-.form-element{
-    margin: 20px auto;
+legend{
+    font-weight: bold;
 }
+
 .btn {
     width: 100px;
     height: 25px;

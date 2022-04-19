@@ -7,18 +7,14 @@ table, tr, th, td{
 
 .table-heading {
   /* use the custom properties green and white for the colors - these colors are defined in the styles.css file */
-}
-
-.channel {
-  /* use the custom properties orange and black for the colors - these colors are defined in the styles.css file */
-}
-thead th{
   background-color: var(--green);
   color: var(--white);
 }
 
-tbody th{
+.channel {
+  /* use the custom properties orange and black for the colors - these colors are defined in the styles.css file */
   background-color: var(--orange);
+  color: var(--black);
 }
 
 th,td{
