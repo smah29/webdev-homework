@@ -1,9 +1,20 @@
 h1 {
   text-align: center;
 }
-
+.flex-container {
+  display: flex;
+}
 /* Code for exercise 01-flex */
-
+.flex-container-1 {
+  flex-flow: row wrap-reverse;
+  justify-content: flex-end;
+}
+.flex-container-1 .item4 {
+  order: -1;
+}
+.flex-container-1 .item7 {
+  order: -2;
+}
 /* Code for exercise 02-flex */
 
 .flex-container-2 {
