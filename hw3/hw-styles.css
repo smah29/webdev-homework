@@ -19,6 +19,8 @@ h1 {
 
 .flex-container-2 {
   height: 400px;
+  flex-flow: column-reverse wrap;
+  align-items: center;
 }
 
 /* Code for exercise 03-grid */
