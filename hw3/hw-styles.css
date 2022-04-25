@@ -52,7 +52,70 @@ h1 {
 }
 
 /* Code for exercise 04-grid */
+.grid-container-2 .item1 {
+  grid-area: header;
+}
+.grid-container-2 .item2 {
+  grid-area: jumbotron;
+}
+.grid-container-2 .item3 {
+  grid-area: card1;
+}
+.grid-container-2 .item4 {
+  grid-area: card2;
+}
+.grid-container-2 .item5 {
+  grid-area: card3;
+}
+.grid-container-2 .item6 {
+  grid-area: section;
+}
+.grid-container-2 .item7 {
+  grid-area: footer;
+}
+.grid-container-2 {
+  height: 104vh;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr repeat(2, 2fr) repeat(3, 1fr);
+  gap: 10px;
+  grid-template-areas:
+    "header"
+    "jumbotron"
+    "section"
+    "card1"
+    "card2"
+    "footer";
+}
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-container-2 {
+    height: 104vh;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 1fr repeat(3, 2fr) 1fr;
+    gap: 10px;
+    grid-template-areas:
+      "header header"
+      "jumbotron jumbotron"
+      "section section"
+      "card1 card2"
+      "footer footer";
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container-2 {
+    height: 89vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr repeat(2, 2fr) 3fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+      "header header header"
+      "jumbotron jumbotron jumbotron"
+      "card1 card2 card3"
+      "section section section"
+      "footer footer footer";
+  }
+}
 /* Code for exercise 05-bootstrap-grid */
 
 .bootstrap-grid .row > * {
