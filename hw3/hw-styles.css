@@ -124,19 +124,19 @@ h1 {
   padding: 10px;
 }
 
-.bootstrap-grid .row:nth-child(1) > * {
+.bootstrap-grid .row:nth-child(2) > * {
   background-color: var(--purple);
 }
 
-.bootstrap-grid .row:nth-child(2) > * {
+.bootstrap-grid .row:nth-child(3) > * {
   background-color: var(--navy);
 }
 
-.bootstrap-grid .row:nth-child(3) > * {
+.bootstrap-grid .row:nth-child(4) > * {
   background-color: var(--teal);
 }
 
-.bootstrap-grid .row:nth-child(4) > * {
+.bootstrap-grid .row:nth-child(5) > * {
   background-color: var(--green);
 }
 
