@@ -1,22 +1,22 @@
 .container {
   width: 50vw;
 }
-main {
+.main {
   margin: auto;
   text-align: center;
 }
 
-figcaption {
+.figcaption {
   text-align: left;
   margin: auto;
   width: 50%;
 }
 
-figcaption::first-line {
+.figcaption::first-line {
   font-weight: bold;
 }
 
-img {
+.img {
   width: 299px;
   height: 299px;
   border-radius: 50%;
