@@ -1,18 +1,18 @@
 .container {
   width: 50vw;
 }
-main{
- margin : auto; 
- text-align: center;
+main {
+  margin: auto;
+  text-align: center;
 }
 
-figcaption{
+figcaption {
   text-align: left;
-  margin-left: 29%;
+  margin: auto;
   width: 50%;
 }
 
-figcaption::first-line{
+figcaption::first-line {
   font-weight: bold;
 }
 
