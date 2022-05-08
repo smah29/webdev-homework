@@ -30,20 +30,16 @@ h1 {
 .grid-container-1 {
   gap: 10px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(9, 80px);
+  grid-template-rows: 160px 80px 240px 160px;
 }
 
 .grid-container-1 .item7 {
   grid-column: 1 / span 4;
-  grid-row: 1 / span 2;
+  grid-row-start: 1;
 }
 .grid-container-1 .item2 {
-  grid-column-start: span 2;
-  grid-row-start: span 4;
-}
-.grid-container-1 .item4,
-.grid-container-1 .item5 {
-  grid-row-start: span 3;
+  grid-column: span 2;
+  grid-row: span 2;
 }
 .grid-container-1 .item6,
 .grid-container-1 .item8 {
