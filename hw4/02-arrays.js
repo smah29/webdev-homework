@@ -2,24 +2,26 @@ let result = [];
 
 const insertItem = (item) => {
   // insert item into result
-
-  return item;
+  result.push(item);
 };
 
 const deleteItem = (item) => {
   // remove the first occurrence of item in result
-
-  return item;
+  let index = result.indexOf(item);
+  if (index > -1) {
+    result.splice(index, 1);
+  }
 };
 
 const lookupItem = (index) => {
+  if (index < 0) return null;
   // return the item from result at index, deleting the obtained item
-
-  return index;
+  return result.splice(index, 1);
 };
 
 const printItems = () => {
   // return a string of the concatenated item in result, separated by commas
+  return result.join(", ");
 };
 
 insertItem(1);
