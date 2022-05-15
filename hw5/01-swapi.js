@@ -1,4 +1,5 @@
 // Data below taken from the Star Wars API: https://swapi.dev/
+const nf = new Intl.NumberFormat('en-US');
 const starships = [
   {
     name: 'CR90 corvette',
@@ -146,20 +147,31 @@ const starships = [
 const mapStarships = (input) => {
   // Return an array with the name, manufacturer, and cost (if not unknown) of each ship
   // Format: "Star Destroyer, manufactured by Kuat Drive Yards - cost: 150,000,000 credits"
-
-  return 'mapStarships';
+  let mapStarships = input.map((item) => {
+    if (item.cost_in_credits == 'unknown') {
+      return `${item.name}, manufactured by ${item.manufacturer}`;
+    } else {
+      let cost = nf.format(item.cost_in_credits);
+      return `${item.name}, manufactured by ${item.manufacturer} - cost: ${cost} credits`;
+    }
+  });
+  return mapStarships;
 };
 
 const filterStarships = (input) => {
   // Return an array with all ships that have less than 10 passengers with more than one crew member
-
-  return 'filterStarships';
+  let filterStarships = input.filter(
+    (item) => item.crew > 1 && item.passengers < 10
+  );
+  return filterStarships;
 };
 
 const reduceStarships = (input) => {
   // Return the cost to purchase all ships in the input array
-
-  return `reduceStarships `;
+  let reduceStarships = input
+    .filter((item) => item.cost_in_credits !== 'unknown')
+    .reduce((acc, curr) => acc + parseInt(curr.cost_in_credits), 0);
+  return `The cost of all starships is ${nf.format(reduceStarships)} credits`;
 };
 
 console.log(mapStarships(starships));
