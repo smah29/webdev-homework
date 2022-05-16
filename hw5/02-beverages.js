@@ -18,6 +18,7 @@ const fetchData = async function (url) {
       addDrinkToDOM(item, ++count);
     });
   } catch (error) {
+    console.error(error);
     let element = document.createElement('div');
     element.textContent = 'An error occured. Please try again';
     app.append(element);
