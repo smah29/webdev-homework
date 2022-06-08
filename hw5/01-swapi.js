@@ -148,7 +148,7 @@ const mapStarships = (input) => {
   // Return an array with the name, manufacturer, and cost (if not unknown) of each ship
   // Format: "Star Destroyer, manufactured by Kuat Drive Yards - cost: 150,000,000 credits"
   let mapStarships = input.map((item) => {
-    if (item.cost_in_credits == 'unknown') {
+    if (isNaN(item.cost_in_credits)) {
       return `${item.name}, manufactured by ${item.manufacturer}`;
     } else {
       let cost = nf.format(item.cost_in_credits);
@@ -169,7 +169,7 @@ const filterStarships = (input) => {
 const reduceStarships = (input) => {
   // Return the cost to purchase all ships in the input array
   let reduceStarships = input
-    .filter((item) => item.cost_in_credits !== 'unknown')
+    .filter((item) => !isNaN(item.cost_in_credits))
     .reduce((acc, curr) => acc + parseInt(curr.cost_in_credits), 0);
   return `The cost of all starships is ${nf.format(reduceStarships)} credits`;
 };
