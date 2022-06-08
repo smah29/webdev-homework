@@ -15,9 +15,8 @@ $(document).ready(function () {
       type: 'GET',
       url: url,
       success: (data) => {
-        let count = 0;
         data.drinks.forEach((item) => {
-          addDrinkToDOM(item, ++count);
+          addDrinkToDOM(item);
         });
       },
       error: (error) => {
@@ -31,7 +30,7 @@ $(document).ready(function () {
       },
     });
   };
-  const addDrinkToDOM = (item, count) => {
+  const addDrinkToDOM = (item) => {
     $('#results').append(
       $('<figure>')
         .addClass('figure')
@@ -43,7 +42,7 @@ $(document).ready(function () {
           $('<img>')
             .attr({
               src: item.strDrinkThumb,
-              alt: `Non-Alcoholic Drink ${count}`,
+              alt: item.strDrink,
             })
             .css({
               width: '210px',

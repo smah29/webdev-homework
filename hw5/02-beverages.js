@@ -13,9 +13,8 @@ const fetchData = async function (url) {
     let response = await fetch(url);
     let data = await response.json();
 
-    let count = 0;
     data.drinks.forEach((item) => {
-      addDrinkToDOM(item, ++count);
+      addDrinkToDOM(item);
     });
   } catch (error) {
     console.error(error);
@@ -27,7 +26,7 @@ const fetchData = async function (url) {
     app.removeChild(loader);
   }
 };
-const addDrinkToDOM = (item, count) => {
+const addDrinkToDOM = (item) => {
   let figure = document.createElement('figure');
   figure.className = 'figure';
   figure.style.marginBottom = '0px';
@@ -35,7 +34,7 @@ const addDrinkToDOM = (item, count) => {
 
   let img = document.createElement('img');
   img.src = item.strDrinkThumb;
-  img.alt = `Non-Alcoholic Drink ${count}`;
+  img.alt = item.strDrink;
   img.style.width = '210px';
   img.style.height = '210px';
 
